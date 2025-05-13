@@ -10,6 +10,10 @@ body, html {
     max-width: 100%;
     overflow-x: hidden;
     max-height: 100vh;
+    background-image: url(img/dan-cristian-padure-h3kuhYUCE9A-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .atas {
@@ -20,6 +24,7 @@ body, html {
     padding: 5px 20px;
     border-bottom: 1px ;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .tengah {
@@ -34,6 +39,14 @@ body, html {
     border: 1px solid;
     border-radius: 20px;
     row-gap: 10px;
+    background-color: white;
+}
+
+.tengah > h4 {
+    height: 50px;
+    display: flex;
+    place-items: center;
+    flex-wrap: wrap;
 }
 
 button {
@@ -49,6 +62,14 @@ button:active {
 }
 
 @media screen and (max-width: 700px) {
+
+    body {
+        background-image: url(img/dan-cristian-padure-h3kuhYUCE9A-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 
     * {
         font-size: x-large;
