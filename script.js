@@ -1,10 +1,7 @@
 function jawaban1() {
-    let pertama = document.getElementById("pertama");
-    let kedua = document.getElementById("kedua");
-    let ketiga = document.getElementById("ketiga");
-    let keempat = document.getElementById("keempat");
+    alert("salah");
+}
 
-    if (kedua) {
-        alert("benar");
-    }
+function jawaban2() {
+    alert ("salah");
 }
