@@ -9,7 +9,11 @@ function cekJawaban(nilai) {
         alert("Benar!");
         currentScore += 100;
         currentStage += 1;
-    } else {
+    } 
+    
+    if (currentStage >= 5) currentScore = 5;
+
+    else {
         alert("Salah!");
         currentScore -= 100;
         currentStage += 1;
