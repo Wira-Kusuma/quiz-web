@@ -3,7 +3,7 @@ function cekJawaban(nilai) {
     const benar = 15744755;
     if (nilai === benar) {
         alert("Benar!");
-        score.innerHTML(100);
+        score.innerHTML="100";
     } else {
         alert("Salah!");
     }
