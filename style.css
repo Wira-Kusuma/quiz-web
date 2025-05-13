@@ -1,8 +1,9 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
-body {
+body, html {
     display: block;
     margin: 0;
     padding: 0;
@@ -28,8 +29,42 @@ body {
     align-items: center;
     width: 300px;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 30px;
     border: 1px solid;
+    border-radius: 20px;
     row-gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid;
+    transition: ease-in-out 0.2s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 700px) {
+
+    * {
+        font-size: x-large;
+    }
+
+    .atas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .tengah {
+        width: 80%;
+        margin-top: 20%;
+        padding: 20px;
+    }
 }
