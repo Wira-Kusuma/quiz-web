@@ -11,8 +11,6 @@ function cekJawaban(nilai) {
         currentStage += 1;
     } 
 
-    // if (currentStage >= 5) currentScore = 5;
-
     else {
         alert("Salah!");
         currentScore -= 100;
