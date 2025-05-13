@@ -3,5 +3,5 @@ function jawaban1() {
 }
 
 function jawaban2() {
-    alert ("salah");
+    alert ("benar"); alert.style.color="green";
 }
