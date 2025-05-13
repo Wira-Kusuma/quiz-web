@@ -10,8 +10,8 @@ function cekJawaban(nilai) {
         currentScore += 100;
         currentStage += 1;
     } 
-    
-    if (currentStage >= 5) currentScore = 5;
+
+    // if (currentStage >= 5) currentScore = 5;
 
     else {
         alert("Salah!");
