@@ -11,13 +11,16 @@ function cekJawaban(nilai) {
         alert("Benar!");
         currentScore += 100;
         currentStage += 1;
-
+        soal1.style.display="none";
+        soal2.style.display="flex";
     } 
 
     else {
         alert("Salah!");
         currentScore -= 100;
         currentStage += 1;
+        soal1.style.display="none";
+        soal2.style.display="flex";
     }
 
     scoreElem.innerText = currentScore;
