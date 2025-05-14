@@ -14,19 +14,32 @@
     </div>
     <div class="tengah " id="soal1">
         <h4>12321321 + 3423434</h4>
-        <button id="pertama" onclick="cekJawaban(12123543)">12123543</button>
-        <button id="kedua" onclick="cekJawaban(15744755)">15744755</button>
-        <button id="ketiga" onclick="cekJawaban(23232123)">23232123</button>
-        <button id="keempat" onclick="cekJawaban(13232434)">13232434</button>
+        <button id="pertama" onclick="cekSoal1(12123543)">12123543</button>
+        <button id="kedua" onclick="cekSoal1(15744755)">15744755</button>
+        <button id="ketiga" onclick="cekSoal1(23232123)">23232123</button>
+        <button id="keempat" onclick="cekSoal1(13232434)">13232434</button>
     </div>
     <div class="tengah " id="soal2">
         <h4>Di bumi ini ada berapa samudra?</h4>
-        <button id="pertama" onclick="cekJawaban(3)">3</button>
-        <button id="kedua" onclick="cekJawaban(4)">4</button>
-        <button id="ketiga" onclick="cekJawaban(5)">5</button>
-        <button id="keempat" onclick="cekJawaban(6)">6</button>
+        <button id="pertama" onclick="cekSoal2(3)">3</button>
+        <button id="kedua" onclick="cekSoal2(4)">4</button>
+        <button id="ketiga" onclick="cekSoal2(5)">5</button>
+        <button id="keempat" onclick="cekSoal2(6)">6</button>
     </div>
-
+    <div id="soalbenar" class="modal">
+            <div class="modal-content">
+                <h1>Hasil Jawaban anda</h1>
+                <p>BENAR</p>
+                <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
+            </div>
+        </div>
+    <div id="soal-salah" class="modal">
+            <div class="modal-content">
+                <h1>Access Granted</h1>
+                <p>Welcome back 🎉</p>
+                <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
