@@ -154,7 +154,7 @@ function cekSoal5 (nilai) {
     let soalsalah = document.getElementById("soalsalah");
 
     let soal5 = document.getElementById("soal5");
-    let soal4 = document.getElementById("soal4");
+    let hasil = document.getElementById("hasil");
 
     let currentScore = Number(scoreElem.innerText);
     let currentStage = Number(stageElem.innerText);
@@ -164,6 +164,7 @@ function cekSoal5 (nilai) {
         currentStage += 1;
         soalbenar.style.display="flex";
         soal5.style.display="none";
+        hasil.style.display="flex";
     } 
 
     else {
@@ -171,6 +172,8 @@ function cekSoal5 (nilai) {
         currentStage += 1;
         soalsalah.style.display="flex";
         soal5.style.display="none";
+        hasil.style.display="flex";
+
     }
     scoreElem.innerText = currentScore;
     stageElem.innerText = currentStage;
