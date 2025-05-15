@@ -143,3 +143,35 @@ function cekSoal4 (nilai) {
     scoreElem.innerText = currentScore;
     stageElem.innerText = currentStage;
 }
+
+function cekSoal5 (nilai) {
+    const benar = 5;
+
+    let scoreElem = document.getElementById("score");
+    let stageElem = document.getElementById("stage");
+
+    let soalbenar = document.getElementById("soalbenar");
+    let soalsalah = document.getElementById("soalsalah");
+
+    let soal5 = document.getElementById("soal5");
+    let soal4 = document.getElementById("soal4");
+
+    let currentScore = Number(scoreElem.innerText);
+    let currentStage = Number(stageElem.innerText);
+
+    if (nilai === benar) {
+        currentScore += 100;
+        currentStage += 1;
+        soalbenar.style.display="flex";
+        soal5.style.display="none";
+    } 
+
+    else {
+        currentScore -= 100;
+        currentStage += 1;
+        soalsalah.style.display="flex";
+        soal5.style.display="none";
+    }
+    scoreElem.innerText = currentScore;
+    stageElem.innerText = currentStage;
+}
