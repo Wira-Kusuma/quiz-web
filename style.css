@@ -61,9 +61,10 @@ button:active {
     transform: scale(0.9);
 }
 
-#soal2 {
-    display: none;
-}
+#soal2 {display: none;}
+#soal3 {display: none;}
+#soal4 {display: none;}
+#soal5 {display: none;}
 
 .modal {
     display: none; 

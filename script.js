@@ -1,3 +1,11 @@
+function closeModal() {
+    let soalbenar = document.getElementById("soalbenar");
+    let soalsalah = document.getElementById("soalsalah");
+
+    soalbenar.style.display="none";
+    soalsalah.style.display="none";
+}
+
 function cekSoal1(nilai) {
     let scoreElem = document.getElementById("score");
     let stageElem = document.getElementById("stage");
@@ -9,7 +17,7 @@ function cekSoal1(nilai) {
     let soal2 = document.getElementById("soal2");
 
 
-    const benar = 15744755;
+    const benar = 17.380;
     let currentScore = Number(scoreElem.innerText);
     let currentStage = Number(stageElem.innerText);
 
@@ -32,14 +40,6 @@ function cekSoal1(nilai) {
 
     scoreElem.innerText = currentScore;
     stageElem.innerText = currentStage;
-}
-
-function closeModal() {
-    let soalbenar = document.getElementById("soalbenar");
-    let soalsalah = document.getElementById("soalsalah");
-
-    soalbenar.style.display="none";
-    soalsalah.style.display="none";
 }
 
 function cekSoal2 (nilai) {
@@ -77,7 +77,7 @@ function cekSoal2 (nilai) {
 }
 
 function cekSoal3 (nilai) {
-    const benar = 4;
+    const benar = 5;
 
     let scoreElem = document.getElementById("score");
     let stageElem = document.getElementById("stage");
@@ -111,7 +111,7 @@ function cekSoal3 (nilai) {
 }
 
 function cekSoal4 (nilai) {
-    const benar = 4;
+    const benar = 5;
 
     let scoreElem = document.getElementById("score");
     let stageElem = document.getElementById("stage");
