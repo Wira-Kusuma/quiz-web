@@ -8,6 +8,7 @@ function closeModal() {
 
 function cekSoal1(nilai) {
     let scoreElem = document.getElementById("score");
+    let scoreElemB = document.getElementById("scoreb");
     let stageElem = document.getElementById("stage");
 
     let soalbenar = document.getElementById("soalbenar");
@@ -19,10 +20,12 @@ function cekSoal1(nilai) {
 
     const benar = 17.380;
     let currentScore = Number(scoreElem.innerText);
+    let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
 
     if (nilai === benar) {
         currentScore += 100;
+        currentScoreB += 100;
         currentStage += 1;
         soalbenar.style.display="flex";
         soal1.style.display="none";
@@ -39,6 +42,7 @@ function cekSoal1(nilai) {
     }
 
     scoreElem.innerText = currentScore;
+    scoreElemB.innerText = currentScoreB;
     stageElem.innerText = currentStage;
 }
 
@@ -46,6 +50,7 @@ function cekSoal2 (nilai) {
     const benar = 4;
 
     let scoreElem = document.getElementById("score");
+    let scoreElemB = document.getElementById("scoreb");
     let stageElem = document.getElementById("stage");
 
     let soalbenar = document.getElementById("soalbenar");
@@ -55,10 +60,12 @@ function cekSoal2 (nilai) {
     let soal3 = document.getElementById("soal3");
 
     let currentScore = Number(scoreElem.innerText);
+    let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
 
     if (nilai === benar) {
         currentScore += 100;
+        currentScoreB += 100;
         currentStage += 1;
         soalbenar.style.display="flex";
         soal2.style.display="none";
@@ -73,6 +80,7 @@ function cekSoal2 (nilai) {
         soal3.style.display="flex";
     }
     scoreElem.innerText = currentScore;
+    scoreElemB.innerText = currentScoreB;
     stageElem.innerText = currentStage;
 }
 
@@ -80,6 +88,7 @@ function cekSoal3 (nilai) {
     const benar = 5;
 
     let scoreElem = document.getElementById("score");
+    let scoreElemB = document.getElementById("scoreb");
     let stageElem = document.getElementById("stage");
 
     let soalbenar = document.getElementById("soalbenar");
@@ -89,10 +98,12 @@ function cekSoal3 (nilai) {
     let soal4 = document.getElementById("soal4");
 
     let currentScore = Number(scoreElem.innerText);
+    let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
 
     if (nilai === benar) {
         currentScore += 100;
+        currentScoreB += 100;
         currentStage += 1;
         soalbenar.style.display="flex";
         soal3.style.display="none";
@@ -107,6 +118,7 @@ function cekSoal3 (nilai) {
         soal4.style.display="flex";
     }
     scoreElem.innerText = currentScore;
+    scoreElemB.innerText = currentScoreB;
     stageElem.innerText = currentStage;
 }
 
@@ -114,6 +126,7 @@ function cekSoal4 (nilai) {
     const benar = 5;
 
     let scoreElem = document.getElementById("score");
+    let scoreElemB = document.getElementById("scoreb");
     let stageElem = document.getElementById("stage");
 
     let soalbenar = document.getElementById("soalbenar");
@@ -123,10 +136,12 @@ function cekSoal4 (nilai) {
     let soal4 = document.getElementById("soal4");
 
     let currentScore = Number(scoreElem.innerText);
+    let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
 
     if (nilai === benar) {
         currentScore += 100;
+        currentScoreB += 100;
         currentStage += 1;
         soalbenar.style.display="flex";
         soal4.style.display="none";
@@ -141,6 +156,7 @@ function cekSoal4 (nilai) {
         soal5.style.display="flex";
     }
     scoreElem.innerText = currentScore;
+    scoreElemB.innerText = currentScoreB;
     stageElem.innerText = currentStage;
 }
 
@@ -148,6 +164,7 @@ function cekSoal5 (nilai) {
     const benar = 5;
 
     let scoreElem = document.getElementById("score");
+    let scoreElemB = document.getElementById("scoreb");
     let stageElem = document.getElementById("stage");
 
     let soalbenar = document.getElementById("soalbenar");
@@ -157,10 +174,12 @@ function cekSoal5 (nilai) {
     let hasil = document.getElementById("hasil");
 
     let currentScore = Number(scoreElem.innerText);
+    let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
 
     if (nilai === benar) {
         currentScore += 100;
+        currentScoreB += 100;
         currentStage += 1;
         soalbenar.style.display="flex";
         soal5.style.display="none";
@@ -176,5 +195,6 @@ function cekSoal5 (nilai) {
 
     }
     scoreElem.innerText = currentScore;
+    scoreElemB.innerText = currentScoreB;
     stageElem.innerText = currentStage;
 }
