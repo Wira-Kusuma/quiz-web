@@ -35,6 +35,7 @@ function cekSoal1(nilai) {
 
     else {
         currentScore -= 100;
+        currentScoreB -= 100;
         currentStage += 1;
         soalsalah.style.display="flex";
         soal1.style.display="none";
@@ -74,6 +75,7 @@ function cekSoal2 (nilai) {
 
     else {
         currentScore -= 100;
+        currentScoreB -= 100;
         currentStage += 1;
         soalsalah.style.display="flex";
         soal2.style.display="none";
@@ -112,6 +114,7 @@ function cekSoal3 (nilai) {
 
     else {
         currentScore -= 100;
+        currentScoreB -= 100;
         currentStage += 1;
         soalsalah.style.display="flex";
         soal3.style.display="none";
@@ -150,6 +153,7 @@ function cekSoal4 (nilai) {
 
     else {
         currentScore -= 100;
+        currentScoreB -= 100;
         currentStage += 1;
         soalsalah.style.display="flex";
         soal4.style.display="none";
@@ -188,6 +192,7 @@ function cekSoal5 (nilai) {
 
     else {
         currentScore -= 100;
+        currentScoreB -= 100;
         currentStage += 1;
         soalsalah.style.display="flex";
         soal5.style.display="none";
