@@ -193,7 +193,6 @@ function cekSoal5 (nilai) {
     else {
         currentScore -= 100;
         currentScoreB -= 100;
-        currentStage += 1;
         soalsalah.style.display="flex";
         soal5.style.display="none";
         hasil.style.display="flex";
