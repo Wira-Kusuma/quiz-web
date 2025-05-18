@@ -18,7 +18,7 @@ function cekSoal1(nilai) {
     let soal2 = document.getElementById("soal2");
 
 
-    const benar = 1;
+    const benar = 2;
     let currentScore = Number(scoreElem.innerText);
     let currentScoreB = Number(scoreElemB.innerText);
     let currentStage = Number(stageElem.innerText);
