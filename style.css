@@ -8,8 +8,8 @@ body, html {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden;
-    max-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
     background-image: url(img/dan-cristian-padure-h3kuhYUCE9A-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@ body, html {
     justify-content: center;
     place-items: center;
     border-radius: 20px;
+    text-align: center;
 }
 
 button {
@@ -107,10 +108,6 @@ button:active {
 @media screen and (max-width: 700px) {
 
     body {
-        background-image: url(img/dan-cristian-padure-h3kuhYUCE9A-unsplash.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 100vh;
     }
 
@@ -126,9 +123,8 @@ button:active {
         max-width: 100%;
     }
 
-    .tengah {
-        width: 80%;
-        margin-top: 20%;
-        padding: 20px;
+    .soal {
+        margin-bottom: 50px;
+        height: 150px;
     }
 }
