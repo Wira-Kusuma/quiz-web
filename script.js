@@ -184,7 +184,6 @@ function cekSoal5 (nilai) {
     if (nilai === benar) {
         currentScore += 100;
         currentScoreB += 100;
-        currentStage += 1;
         soalbenar.style.display="flex";
         soal5.style.display="none";
         hasil.style.display="flex";
