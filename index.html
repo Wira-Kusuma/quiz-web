@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz mate</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/quiz.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <!-- eksternal css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/quiz.png" type="image/x-icon" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Dancing+Script&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <div class="atas">
         <p><span id="stage">1</span>/5</p>
-        <p>Stage Level : Easy</p>
         <p><span id="score">0</span> pts</p>
     </div>
+
     <div class="tengah" id="soal1">
-    <div class="soal">
-        <h4>1. Apa arti kata "reliable"?</h4>
+        <div class="soal">
+            <h4>1. Apa arti kata "reliable"?</h4>
+        </div>
+
+        <button onclick="cekSoal1(1)">Unpredictable</button>
+        <button onclick="cekSoal1(2)">Trustworthy</button>
+        <button onclick="cekSoal1(3)">Expensive</button>
+        <button onclick="cekSoal1(4)">Funny</button>
     </div>
-    <button onclick="cekSoal1(1)">Unpredictable</button>
-    <button onclick="cekSoal1(2)">Trustworthy</button>
-    <button onclick="cekSoal1(3)">Expensive</button>
-    <button onclick="cekSoal1(4)">Funny</button>
-</div>
 
-<div class="tengah" id="soal2">
-    <div class="soal">
-        <h4>2. Jika seseorang terlihat "confused", itu berarti dia...</h4>
+    <div class="tengah" id="soal2">
+        <div class="soal">
+            <h4>2. Jika seseorang terlihat "confused", itu berarti dia...</h4>
+        </div>
+
+        <button onclick="cekSoal2(1)">Understands clearly</button>
+        <button onclick="cekSoal2(2)">Is very confident</button>
+        <button onclick="cekSoal2(3)">Doesn't know what's going on</button>
+        <button onclick="cekSoal2(4)">Is angry</button>
     </div>
-    <button onclick="cekSoal2(1)">Understands clearly</button>
-    <button onclick="cekSoal2(2)">Is very confident</button>
-    <button onclick="cekSoal2(3)">Doesn't know what's going on</button>
-    <button onclick="cekSoal2(4)">Is angry</button>
-</div>
 
-<div class="tengah" id="soal3">
-    <div class="soal">
-        <h4>3. Apa arti dari kata "improve"?</h4>
+    <div class="tengah" id="soal3">
+        <div class="soal">
+            <h4>3. Apa arti dari kata "improve"?</h4>
+        </div>
+
+        <button onclick="cekSoal3(1)">To make something worse</button>
+        <button onclick="cekSoal3(2)">To make something better</button>
+        <button onclick="cekSoal3(3)">To throw something away</button>
+        <button onclick="cekSoal3(4)">To copy something</button>
     </div>
-    <button onclick="cekSoal3(1)">To make something worse</button>
-    <button onclick="cekSoal3(2)">To make something better</button> 
-    <button onclick="cekSoal3(3)">To throw something away</button>
-    <button onclick="cekSoal3(4)">To copy something</button>
-</div>
 
-<div class="tengah" id="soal4">
-    <div class="soal">
-        <h4>4. Jika seseorang "refuses" sesuatu, apa yang dia lakukan?</h4>
+    <div class="tengah" id="soal4">
+        <div class="soal">
+            <h4>4. Jika seseorang "refuses" sesuatu, apa yang dia lakukan?</h4>
+        </div>
+
+        <button onclick="cekSoal4(1)">Accepts it</button>
+        <button onclick="cekSoal4(2)">Ignores it</button>
+        <button onclick="cekSoal4(3)">Says no</button>
+        <button onclick="cekSoal4(4)">Understands it</button>
     </div>
-    <button onclick="cekSoal4(1)">Accepts it</button>
-    <button onclick="cekSoal4(2)">Ignores it</button>
-    <button onclick="cekSoal4(3)">Says no</button> 
-    <button onclick="cekSoal4(4)">Understands it</button>
-</div>
 
-<div class="tengah" id="soal5">
-    <div class="soal">
-        <h4>5. Kata "boring" biasanya digunakan untuk menggambarkan sesuatu yang...</h4>
+    <div class="tengah" id="soal5">
+        <div class="soal">
+            <h4>
+                5. Kata "boring" biasanya digunakan untuk menggambarkan sesuatu
+                yang...
+            </h4>
+        </div>
+
+        <button onclick="cekSoal5(1)">Very interesting</button>
+
+        <button onclick="cekSoal5(2)">Difficult to understand</button>
+
+        <button onclick="cekSoal5(3)">Not fun or exciting</button>
+
+        <button onclick="cekSoal5(4)">Full of energy</button>
     </div>
-    <button onclick="cekSoal5(1)">Very interesting</button>
-    <button onclick="cekSoal5(2)">Difficult to understand</button>
-    <button onclick="cekSoal5(3)">Not fun or exciting</button> 
-    <button onclick="cekSoal5(4)">Full of energy</button>
-</div>
 
-
+    <!-- final score panel -->
     <div class="hasil" id="hasil">
         <h4>kuis selesai</h4>
         <p>Skor anda <span id="scoreb"> </span> point</p>
     </div>
 
-
-
-
+    <!-- flying notification -->
     <div id="soalbenar" class="modal">
-            <div class="modal-content">
-                <h1>Hasil Jawaban anda</h1>
-                <p style="color: lightgreen; font-weight: bold;">BENAR +100 poin</p>
-                <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
-            </div>
+        <div class="modal-content">
+            <h1>Hasil Jawaban anda</h1>
+
+            <p style="color: lightgreen; font-weight: bold">BENAR +100 poin</p>
+
+            <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
         </div>
+    </div>
+
     <div id="soalsalah" class="modal">
-            <div class="modal-content">
-                <h1>Hasil Jawaban anda</h1>
-                <p style="color: red; font-weight: bold;">SALAH -100 poin</p>
-                <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
-            </div>
+        <div class="modal-content">
+            <h1>Hasil Jawaban anda</h1>
+            <p style="color: red; font-weight: bold">SALAH 0 poin</p>
+            <button onclick="closeModal()">Lanjut ke soal berikutnya</button>
         </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

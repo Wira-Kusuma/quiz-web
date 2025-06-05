@@ -1,30 +1,37 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive, 'Baloo 2';
     font-size: large;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body, html {
-    display: block;
+body,html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow: hidden;
     height: 100vh;
     background-image: url(img/dan-cristian-padure-h3kuhYUCE9A-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    user-select: none;
 }
 
 .atas {
+    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    border-bottom: 1px ;
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .tengah {
@@ -32,12 +39,9 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
-    margin-top: 5%;
     padding: 30px;
-    border: 1px solid;
-    border-radius: 20px;
     row-gap: 10px;
     background-color: transparent;
 }
@@ -49,20 +53,25 @@ body, html {
     display: flex;
     justify-content: center;
     place-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
 button {
     width: 100%;
     height: 60px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
 }
 
 button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 #soal2 {display: none;}
@@ -72,13 +81,13 @@ button:active {
 .hasil {display: none;}
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -106,25 +115,20 @@ button:active {
 }
 
 @media screen and (max-width: 700px) {
-
-    body {
-        height: 100vh;
-    }
-
     * {
         font-size: x-large;
+        font-family: 'Baloo 2';
+    }
+    
+    button:hover {
+        transition: none;
+        transform: none;
     }
 
-    .atas {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        max-width: 100%;
+    .atas,.tengah {
+        width: 80%;
+        padding: 20px;
+        cursor: none;
     }
 
-    .soal {
-        margin-bottom: 50px;
-        height: 150px;
-    }
 }
