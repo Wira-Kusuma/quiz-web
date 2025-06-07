@@ -62,10 +62,12 @@ nav a {
     height: 150px;
     border-radius: 10px;
     transition: ease 0.1s;
+    cursor: pointer;
 }
 
 .card:active {
-    transform: scale(0.9);
+    transform: scale(0.98);
+    box-shadow: none;
 }
 
 .card h1 {
@@ -90,6 +92,7 @@ nav a {
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .modal {
@@ -101,6 +104,17 @@ nav a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.modalbg img {
+    width: 50px;
+    margin: 20px 5px;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+.modalbg img:hover {
+    transform: scale(1.11);
 }
 
 button {
@@ -109,9 +123,15 @@ button {
     padding: 5px 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     transition: ease 0.1s;
+    cursor: pointer;
 }
 
 button:active {
+    box-shadow: none;
+}
+
+button:hover {
+    transform: scale(0.98);
     box-shadow: none;
 }
 
