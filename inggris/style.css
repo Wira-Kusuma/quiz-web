@@ -78,7 +78,6 @@ button:active {
 #soal3 {display: none;}
 #soal4 {display: none;}
 #soal5 {display: none;}
-.hasil {display: none;}
 
 .modal {
     display: none;
@@ -104,14 +103,16 @@ button:active {
 
 .hasil {
     background-color: white;
-    width: 50%;
+    width: 300px;
     height: fit-content;
     margin: auto;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     flex-direction: column;
     margin-top: 10%;
-
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 700px) {

@@ -11,12 +11,22 @@ let soal3 = document.getElementById("soal3");
 let soal4 = document.getElementById("soal4");
 let soal5 = document.getElementById("soal5");
 
+// back to homepage
+let = goHome = document.getElementById("goHome");
 
+goHome.addEventListener('click', backToIndex)
+
+function backToIndex() {
+    window.location.href="../index.html";
+}
+
+// close when click
 function closeModal() {
 
     soalbenar.style.display="none";
     soalsalah.style.display="none";
 }
+
 
 function cekSoal1(nilai) {
 
