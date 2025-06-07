@@ -153,6 +153,10 @@ button:hover {
 .card4 {background-image: url(img/bok.jpg);}
 
 @media screen and (max-width:700px){
+    * {
+        font-family: 'poppins';
+    }
+
     nav {
         display: none;
     }
