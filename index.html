@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <!-- eksternal css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/quiz.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/quiz.png" type="image/x-icon" />
 
-     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Dancing+Script&display=swap" rel="stylesheet" />
-</head>
-<body>
-    
-    
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Quiz</h1>
+      <h1>Quiz</h1>
 
-        <nav>
-            <a href="">Home</a>
-            <a href="">Play Quiz</a>
-            <a href="">Donate</a>
-            <a href="">About us</a>
-        </nav>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Play Quiz</a>
+        <a href="">Donate</a>
+        <a href="">About us</a>
+      </nav>
     </header>
-    
-    
+
     <h1>Choose quiz you want to play</h1>
     <div class="container" id="mate">
+      <div class="card card2" id="english">
+        <h1>English test</h1>
+      </div>
 
-        <div class="card card2" id="inggris">
-            <h1>English test</h1>
-        </div>
+      <div class="card card1" id="mate">
+        <h1>Mate test</h1>
+      </div>
 
-        <div class="card card1" id="mate">
-           <h1>Mate test</h1>
-        </div>
+      <div class="card card3" id="country">
+        <h1>Guess county</h1>
+      </div>
 
-        <div class="card card3" id="country">
-            <h1>Guess county</h1>
-        </div> 
+      <div class="card card4" id="quiz">
+        <h1>Coming Soon</h1>
+      </div>
+    </div>
 
-        <div class="card card4" id="quiz">
-            <h1>Coming Soon</h1>
-        </div>
+    <div class="modalbg" id="englishModal">
+      <div class="modal">
+        <h1>Quiz English</h1>
+        <p>Rules:</p>
+        <li>Do not Cheating</li>
+        <li>Do not ask other</li>
+        <button>Start Quiz</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

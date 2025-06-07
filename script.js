@@ -1,13 +1,15 @@
 let mate = document.getElementById("mate");
-let inggris = document.getElementById("inggris");
+let english = document.getElementById("english");
 let country = document.getElementById("country");
 
+let englishModal = document.getElementById("englishModal");
 
-inggris.addEventListener('click', kuisInggris);
+
+english.addEventListener('click', kuisInggris);
 
 function kuisInggris() {
     setTimeout(() => {
-        window.location.href="inggris/index.html";
+        englishModal.style.display="flex";
     },100)
     inggris.style.boxShadow="none";
 }
